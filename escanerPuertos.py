@@ -1,4 +1,5 @@
 import nmap
+#se coloca el objeto para en escaneo depuertos
 nm=nmap.PortScanner()
 ip=input("Coloca tu ip: ")
 nm.scan(hosts=ip, arguments="--top-ports 1000 -sV --version-intensity 3")
